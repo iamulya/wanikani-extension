@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "WaniKani Quick Lookup",
+    "version": "1.0",
+    "description": "Double-click a word to look it up on WaniKani.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content_script.js"]
+      }
+    ]
+  }
